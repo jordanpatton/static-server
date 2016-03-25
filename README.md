@@ -17,5 +17,5 @@ cd static-server
 npm install
 
 # Start the app
-node app.js
+STATIC_SERVER_PATH='~/some/path' STATIC_SERVER_PORT=3000 node app.js
 ```
