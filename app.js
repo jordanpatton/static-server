@@ -1,8 +1,13 @@
 /* dependencies */
 var express = require('express');
 
-/* configuration */
+/* configuration: STATIC_SERVER_PATH */
 var STATIC_SERVER_PATH = process.env.STATIC_SERVER_PATH || __dirname;
+if (STATIC_SERVER_PATH.length && STATIC_SERVER_PATH[0] === '~') {
+  STATIC_SERVER_PATH = process.env.HOME + STATIC_SERVER_PATH.slice(1);
+}
+
+/* configuration: STATIC_SERVER_PORT */
 var STATIC_SERVER_PORT = parseInt((process.env.STATIC_SERVER_PORT || 3000), 10);
 if (isNaN(STATIC_SERVER_PORT)) {
   console.log('invalid port:', STATIC_SERVER_PORT);
