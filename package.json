@@ -1,0 +1,17 @@
+{
+  "name": "static-server",
+  "version": "0.0.1",
+  "description": "A very unsafe static http development server.",
+  "author": "Jordan Patton <jordanpatton@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jordanpatton/static-server.git"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "main": "app.js"
+}
