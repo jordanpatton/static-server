@@ -4,8 +4,6 @@ A very unsafe static http development server.
 
 Getting Started
 ---------------
-1. Open Terminal and do the following:
-
 ```bash
 # get the latest snapshot
 git clone https://github.com/jordanpatton/static-server.git static-server
